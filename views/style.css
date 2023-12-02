@@ -1,0 +1,189 @@
+/*all*/
+body {
+  font-family: 'Mukta', sans-serif;
+}
+
+h1, button, .card-title, .card-text-commentary, .carsButton, .detailButton, .contactForm, .commentForm, .loginButton, .backendButton, #buttonaddstaffform {
+  font-family: 'Trirong', serif;
+}
+
+#button-login, footer {
+  display: flex;
+}
+
+#contact, .carsButton, #adress-timetable, .card-text-commentary, #buttonaddstaffform {
+  color: #D92332;
+}
+
+h4, .contactButton, .commentButton, .detailButton, .contactForm, .commentForm, .loginButton, .backendButton {
+  color: black;
+}
+
+footer, .carsButton {
+  background-color: black;
+}
+
+.contactButton, .commentButton, .detailButton, .contactForm, .commentForm, .loginButton, .backendButton, h4 {
+  background-color: #D92332;
+}
+
+.card, .carDetail, h4 {
+  padding: 10px;
+}
+
+.contactButton, .commentButton, .detailButton, .contactForm, .commentForm, .loginButton, .backendButton {
+  font-size: large;
+  border: solid 1px black;
+}
+
+#button-home, #button-login {
+  position: absolute;
+}
+
+
+/*layout*/
+header {
+  padding: 100px;
+}
+
+#button-login {
+  right : 1px;
+  top: 20px;
+  width: 10vw;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#button-home {
+  left: 5px;
+  top: 5px;
+}
+
+/*footer*/
+footer {
+  position: static;
+  bottom: 0px;
+  margin-top: 30px;
+}
+
+#adress-timetable {
+  padding: 15px;
+  margin: 10px;
+}
+
+#adress {
+  text-align: center;
+}
+
+#timetable {
+  text-align: left;
+}
+
+#timetable p {
+  margin: 0;
+}
+
+#contact {
+  font-size: xx-large;
+}
+
+/*home*/
+.card {
+  width: 100%;
+  border: 0;
+}
+
+.services-card {
+  display: inline-block;
+  border: solid 1px #D92332;
+}
+
+.services-card, #adress-timetable {
+  border-radius: 30px;
+}
+
+.carsButton {
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.card-title{
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.card-text-commentary {
+  font-size: medium;
+}
+
+.img-cars-home {
+  padding: 0;
+  height: 200px;
+}
+
+h1{
+  padding-top: 30px;
+  margin-bottom: 0;
+}
+
+/* cars */
+
+
+/*car's detail*/
+.pictures {
+  height: 18rem;
+  width: auto;
+}
+
+.carDetail {
+  border-radius: 20px;
+  border: solid 1px #D92332;
+}
+
+#carouselExampleDark {
+  margin-top: 10px;
+}
+
+/*login*/
+#login-f {
+  width : 50%;
+  height: 50vh;
+  padding: 20px;
+  border: solid 1px #D92332;
+}
+
+#login-form {
+  width : 80%;
+}
+
+/*interface*/
+.backendButton {
+  margin: 10px;
+}
+
+#staffform {
+  display : none;
+}
+
+#buttonaddstaffform {
+  border: solid 1px #D92332;
+  background-color: white;
+}
+
+/*responsive*/
+/* TO DO : scroll card/photo +  replace text for icon */
+@media screen and (max-width: 576px) {
+#login-f {
+    width : 100%;
+  }
+
+.carDetail {
+    border: none;
+  }
+
+.logo {
+  width: 50%;
+}
+}
+
