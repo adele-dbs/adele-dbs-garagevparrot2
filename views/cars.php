@@ -5,6 +5,7 @@ content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."';
 $page_id= 'id="cars"';
 ob_start();
 ?>
+
 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="?">Accueil</a></li>
@@ -12,13 +13,9 @@ ob_start();
   </ol>
 </nav>
 
-<div id="contentJquery" class="contentJquery-div">Test de jQuery
-  <p>Bonjour tout le monde !</p>
-</div>
-
 <!--TO DO : search without recharge-->
 <div class="container">
-  <form class="" method="POST" action="">
+  <form class="" method="POST" action="" id="filterForm">
     <div class="row">
       <div class="col-sm-4 text-center">
         <div class="card-title">Année</div>
@@ -61,6 +58,13 @@ ob_start();
       </div>
       <button type="submit" class="btn btn-light">Rechercher</button>
     </form>
+  </div>
+
+  <!-- Test Ajax -->
+  <div>
+    <h3>Test Ajax avec Jquery</h3>
+    <input type='test' name='rech'></input>
+    <p id='resultat'></p>
   </div>
 
   <!-- if filter : just search result -->

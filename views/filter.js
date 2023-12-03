@@ -1,10 +1,23 @@
 jQuery(document).ready(() => {
   //pour vérifier si JQuery focntionne bien : 
-  //alert('jQuery est inclus !')
-})
+    //alert('jQuery est inclus !')
 
-$('#contentJquery p').html('<b>Ajoutons un filtre</b>')
-$('#contentJquery p').css('color', 'red') 
-$('#contentJquery p').click(function() {
-  alert('Clique sur le paragraphe')
-})
+    var $input=$('input[name=rech]');
+    var critere=$.trim($input.val());
+    $input.keyup(function(){
+        id=$.trim($input.val());
+        if(id!=''){
+            /*$.get('models/ajaxSearch.php?id='+id,function(retour){
+                $('#resultat').html(retour).fadeIn();
+            });*/
+            $.ajax({
+                url:'models/ajaxSearch.php',
+                data:'id='+id,
+                success: function(retour){
+                    $('#resultat').html(retour).fadeIn();
+                }
+            });
+        }else $('#resultat').empty().fadeOut();
+    });
+});
+

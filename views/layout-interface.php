@@ -57,6 +57,7 @@
 <!--JQuery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <!--Insérer les scrips JQuery-->
-<script src="views/backend-button.js"></script>
+<!--<script src="views/backend-button.js"></script>-->
+<!--<script type="text/javascript" src="views/ajax.js"></script>-->
 
 </html>
